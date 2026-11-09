@@ -8,14 +8,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Pel·lícules',
+      title: 'Pel·lícules prova',
       initialRoute: '/',
       routes: {
         '/': (BuildContext context) => HomeScreen(),
         'details': (BuildContext context) => DetailsScreen(),
       },
-      theme: ThemeData.light()
-          .copyWith(appBarTheme: const AppBarTheme(backgroundColor: Colors.indigo)),
+      theme: ThemeData.light().copyWith(
+          appBarTheme: const AppBarTheme(backgroundColor: Colors.indigo)),
     );
   }
 }
